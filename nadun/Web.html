@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Web.css">
+    <title>Pizza Delivery</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Pizza Delivery</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="image">
+        <img src="pizza.jpg" style="width:100%;">
+    </div>
+    <main class="content">
+        
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <h3>Margherita Pizza</h3>
+                <p>Classic tomato sauce, mozzarella, fresh basil.</p>
+                <span class="price">$10</span>
+            </div>
+            <div class="menu-item">
+                <h3>Pepperoni Pizza</h3>
+                <p>Tomato sauce, mozzarella, pepperoni slices.</p>
+                <span class="price">$12</span>
+            </div>
+            <!-- More menu items can be added here -->
+        </section>
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="pizza">Select Pizza:</label>
+                <select id="pizza" name="pizza" required>
+                    <option value="margherita">Margherita Pizza</option>
+                    <option value="pepperoni">Pepperoni Pizza</option>
+                    <!-- More pizza options can be added here -->
+                </select>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Pizza Delivery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

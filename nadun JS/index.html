@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Concepts</title>
+</head>
+<body>
+<h1>JavaScript Concepts Implementation</h1>
+
+<script>
+  // String methods
+  const str = "Hello, World!";
+  console.log("String Length:", str.length);
+  console.log("Uppercase:", str.toUpperCase());
+  console.log("Substring:", str.substring(0, 5));
+  console.log("Index of 'World':", str.indexOf("World"));
+  console.log("Replacing 'Hello' with 'Hi':", str.replace("Hello", "Hi"));
+
+  // Number methods
+  const num = 42.75;
+  console.log("Fixed to 2 decimals:", num.toFixed(2));
+  console.log("Exponential notation:", num.toExponential());
+  console.log("Rounded value:", Math.round(num));
+  console.log("Maximum of 42.75 and 30:", Math.max(num, 30));
+  console.log("Square root:", Math.sqrt(num));
+
+  // Array methods
+  const arr = [1, 2, 3, "four", 5, "six", 7];
+  console.log("Array length:", arr.length);
+  console.log("Join as string:", arr.join(", "));
+  console.log("Index of 'four':", arr.indexOf("four"));
+  console.log("Last index of 'six':", arr.lastIndexOf("six"));
+  console.log("Array reversed:", arr.reverse());
+
+  // Date methods
+  const currentDate = new Date();
+  console.log("Current date:", currentDate);
+  console.log("Year:", currentDate.getFullYear());
+  console.log("Month:", currentDate.getMonth());
+  console.log("Day of the week:", currentDate.getDay());
+  console.log("Formatted date:", currentDate.toDateString());
+
+  // Function methods 
+  function greet(name) {
+    console.log("Hello,", name);
+  }
+  
+  const delayedGreet = setTimeout(greet, 2000, "Alice");
+  clearTimeout(delayedGreet); // Cancel the delayed greeting
+  
+  const intervalGreet = setInterval(greet, 3000, "Bob");
+  setTimeout(() => clearInterval(intervalGreet), 10000); // Stop the interval after 10 seconds
+</script>
+</body>
+</html>
